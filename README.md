@@ -1,6 +1,6 @@
 # lib-bundler
 
-lib-bundler is a code bundler for bundling the js lib that it written by es6.
+lib-bundler is a bundling tool for js lib implemented by es6.
 
 ## Usage
 ```
