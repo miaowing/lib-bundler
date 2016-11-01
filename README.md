@@ -6,7 +6,7 @@ lib-bundler is a code bundler for bundling the js lib that it written by es6.
 ```
 $ npm install lib-bundler --save-dev
 ```
-
+### build.js
 ``` javascript
 var Bundler = require('lib-bundler');
 
@@ -20,6 +20,18 @@ var bundler = new Bundler({
 });
 
 bundler.bundled()
+```
+
+### .babelrc
+```json
+{
+  "presets": [ "es2015-rollup" ]
+}
+```
+
+### Bundled
+```
+$ node build.js
 ```
 
 ### Output
