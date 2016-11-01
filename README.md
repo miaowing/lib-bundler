@@ -22,6 +22,15 @@ var bundler = new Bundler({
 bundler.bundled()
 ```
 
+### Output
+```
+test.common.js
+test.js
+test.min.js
+test.min.js.gz
+test.min.js.map
+```
+
 ## Feedback
 If you any questions, use [Issues](https://github.com/miaowing/lib-bundler/issues).
 
