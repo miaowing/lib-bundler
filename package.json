@@ -1,0 +1,36 @@
+{
+  "name": "lib-bundler",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miaowing/libbuilder.git"
+  },
+  "keywords": [
+    "lib_builder",
+    "lib_compiler",
+    "builder",
+    "bundler"
+  ],
+  "author": "miaowing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miaowing/libbuilder/issues"
+  },
+  "homepage": "https://github.com/miaowing/libbuilder#readme",
+  "dependencies": {
+    "babel-core": "^6.18.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-replace": "^1.1.1",
+    "uglify-js": "^2.7.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
