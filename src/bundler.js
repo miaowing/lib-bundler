@@ -12,6 +12,7 @@ exports.bundler = function (options) {
     var exports = {};
     options = options || {};
 
+    var type = options.type || 'all';
     var projectName = options.project || "lib_bundler_project";
     var moduleName = options.moduleName || "lib_bundler_module";
     var authorName = options.author || "lib_builder";
@@ -29,7 +30,13 @@ exports.bundler = function (options) {
         ' */';
 
     exports.bundled = function () {
-        return bundledCommonJs().then(bundledUmd).then(bundledUmdMin);
+        if (type === 'all') {
+            return bundledCommonJs().then(bundledUmd).then(bundledUmdMin);
+        } else if (type === 'commonjs') {
+            return bundledCommonJs();
+        } else if (type === 'umd') {
+            return bundledUmd().then(bundledUmdMin);
+        }
     };
 
     function bundledCommonJs() {

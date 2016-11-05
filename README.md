@@ -11,12 +11,14 @@ $ npm install lib-bundler --save-dev
 var Bundler = require('lib-bundler');
 
 var bundler = new Bundler({
+    type: "commonjs" // all, commonjs, umd; default is 'all'.
     project: "test",
     moduleName: "test",
     author: "author",
     version: "1.0.0",
     entry: "./src/index.js",
-    output: "./dist"
+    output: "./dist",
+    license: "MIT"
 });
 
 bundler.bundled()
